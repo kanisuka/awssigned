@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>동영상 파일 스트리밍 on Serverless 기반에서 Signed URL을 사용하여 파일 업로드 다운로드 하기</title>
+    <link>/ko/introduction/streaming_download/</link>
+    <description>Recent content in 동영상 파일 스트리밍 on Serverless 기반에서 Signed URL을 사용하여 파일 업로드 다운로드 하기</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="/ko/introduction/streaming_download/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
