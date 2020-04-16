@@ -1,5 +1,5 @@
-title = "Hugo 템플릿 활용하기"
-googleAnalytics = "UA-161422664-1"
+title = "Serverless 기반에서 Signed URL을 사용하여 파일 업로드 다운로드 하기"
+googleAnalytics = ""
 anguageCode = "ko-KR"
 defaultContentLanguage = "ko"
 theme = "hugo-theme-learn"
@@ -17,7 +17,7 @@ home = [ "HTML", "RSS", "JSON"]
   disableNextPrev = false
   themeVariant = "aws"
   disableInlineCopyToClipBoard = false
-  author = "Hyounsoo Kim"
+  author = "Hoyeon Park"
 
 [[menu.shortcuts]] 
   name = "<i class='fab fa-aws'></i> AWS Homepage"
@@ -36,7 +36,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
   name = "<i class='fab fa-github'></i> Github"
-  url = "https://github.com/studydev/hugo-workshop"
+  url = "https://github.com/kanisuka"
   weight = 1040
 
 [Languages]
@@ -51,4 +51,4 @@ home = [ "HTML", "RSS", "JSON"]
 [deployment]
   [[deployment.targets]]
     name = "s3"
-    URL = "s3://hugo.awsdemo.kr?region=ap-northeast-2"
+    URL = "s3://public-aws-hol/signed?region=ap-northeast-2"

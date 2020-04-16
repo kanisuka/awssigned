@@ -3,29 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.67.1" />
+    <meta name="generator" content="Hugo 0.68.3" />
     <meta name="description" content="">
-<meta name="author" content="Hyounsoo Kim">
+<meta name="author" content="Hoyeon Park">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>실습 리소스 정리 :: Hugo 템플릿 활용하기</title>
+    <title>실습 리소스 정리 :: Serverless 기반에서 Signed URL을 사용하여 파일 업로드 다운로드 하기</title>
 
     
-    <link href="/css/nucleus.css?1584941427" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1584941427" rel="stylesheet">
-    <link href="/css/hybrid.css?1584941427" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1584941427" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1584941427" rel="stylesheet">
-    <link href="/css/auto-complete.css?1584941427" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1584941427" rel="stylesheet">
-    <link href="/css/theme.css?1584941427" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1584941427" rel="stylesheet">
+    <link href="/css/nucleus.css?1587027520" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1587027520" rel="stylesheet">
+    <link href="/css/hybrid.css?1587027520" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1587027520" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1587027520" rel="stylesheet">
+    <link href="/css/auto-complete.css?1587027520" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1587027520" rel="stylesheet">
+    <link href="/css/theme.css?1587027520" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1587027520" rel="stylesheet">
     
-      <link href="/css/theme-aws.css?1584941427" rel="stylesheet">
+      <link href="/css/theme-aws.css?1587027520" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1584941427"></script>
+    <script src="/js/jquery-3.3.1.min.js?1587027520"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1584941427"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1584941427"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1587027520"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1587027520"></script>
 <script type="text/javascript">
     
         var baseurl = "\/ko";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1584941427"></script>
+<script type="text/javascript" src="/js/search.js?1587027520"></script>
 
     
   </div>
@@ -78,205 +78,13 @@
  
   
     
-    <li data-nav-id="/ko/tip/" title="워크샵 만들기 Tip" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/tip/">
-          <b>0. </b>워크샵 만들기 Tip
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/tip/contributions/" title="HUGO" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/tip/contributions/">
-          HUGO
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/tip/vscode/" title="VS Code Extensions 활용" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/tip/vscode/">
-          VS Code Extensions 활용
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/tip/hugo/" title="기여도" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/tip/hugo/">
-          기여도
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/tip/image/" title="이미지" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/tip/image/">
-          이미지
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/tip/aws/" title="AWS 설정" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/tip/aws/">
-          AWS 설정
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/tip/ga/" title="Google Analytics" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/tip/ga/">
-          Google Analytics
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/introduction/" title="소개" class="dd-item 
+    <li data-nav-id="/ko/introduction/" title="시나리오 소개" class="dd-item 
         
         
         
         ">
       <a href="/ko/introduction/">
-          <b>1. </b>소개
+          <b>1. </b>시나리오 소개
           
       </a>
       
@@ -299,13 +107,13 @@
  
   
     
-    <li data-nav-id="/ko/introduction/datalake/" title="Data Lake" class="dd-item 
+    <li data-nav-id="/ko/introduction/upload/" title="이미지 파일 업로드" class="dd-item 
         
         
         
         ">
-      <a href="/ko/introduction/datalake/">
-          <b>1-1 </b>Data Lake
+      <a href="/ko/introduction/upload/">
+          <b>1-1 </b>이미지 파일 업로드
           
       </a>
       
@@ -325,13 +133,91 @@
  
   
     
-    <li data-nav-id="/ko/introduction/lakeformation/" title="AWS Lake Formation" class="dd-item 
+    <li data-nav-id="/ko/introduction/download/" title="이미지 파일 다운로드" class="dd-item 
         
         
         
         ">
-      <a href="/ko/introduction/lakeformation/">
-          <b>1-2 </b>AWS Lake Formation
+      <a href="/ko/introduction/download/">
+          <b>1-2 </b>이미지 파일 다운로드
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ko/introduction/thumbnail/" title="썸네일 다운로드" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ko/introduction/thumbnail/">
+          <b>1-3 </b>썸네일 다운로드
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ko/introduction/streaming_upload/" title="동영상 파일 업로드" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ko/introduction/streaming_upload/">
+          <b>1-4 </b>동영상 파일 업로드
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ko/introduction/streaming_download/" title="동영상 파일 스트리밍" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ko/introduction/streaming_download/">
+          <b>1-5 </b>동영상 파일 스트리밍
           
       </a>
       
@@ -392,30 +278,6 @@
           
       </a>
       
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/build-datalake/" title="Data Lake 구축" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/build-datalake/">
-          <b>4. </b>Data Lake 구축
-          
-      </a>
-      
       
         <ul>
           
@@ -435,13 +297,13 @@
  
   
     
-    <li data-nav-id="/ko/build-datalake/admin/" title="관리자 설정" class="dd-item 
+    <li data-nav-id="/ko/lab-setup/account/" title="계정 생성" class="dd-item 
         
         
         
         ">
-      <a href="/ko/build-datalake/admin/">
-          <b>4-1. </b>관리자 설정
+      <a href="/ko/lab-setup/account/">
+          <b>3-1. </b>계정 생성
           
       </a>
       
@@ -461,143 +323,13 @@
  
   
     
-    <li data-nav-id="/ko/build-datalake/database/" title="데이터베이스 생성" class="dd-item 
+    <li data-nav-id="/ko/lab-setup/toolkit/" title="개발 환경 설정" class="dd-item 
         
         
         
         ">
-      <a href="/ko/build-datalake/database/">
-          <b>4-2. </b>데이터베이스 생성
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/build-datalake/storage/" title="S3 스토리지 설정" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/build-datalake/storage/">
-          <b>4-3. </b>S3 스토리지 설정
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/build-datalake/blueprint/" title="데이터 수집을 위한 Blueprint 설정" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/build-datalake/blueprint/">
-          <b>4-4. </b>데이터 수집을 위한 Blueprint 설정
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/build-datalake/verify/" title="데이터 검증" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/build-datalake/verify/">
-          <b>4-5. </b>데이터 검증
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/build-datalake/datamart/" title="데이터 마트 생성" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/build-datalake/datamart/">
-          <b>4-6. </b>데이터 마트 생성
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/build-datalake/security/" title="데이터 보안 설정" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/build-datalake/security/">
-          <b>4-7. </b>데이터 보안 설정
+      <a href="/ko/lab-setup/toolkit/">
+          <b>3-2. </b>개발 환경 설정
           
       </a>
       
@@ -624,13 +356,13 @@
  
   
     
-    <li data-nav-id="/ko/analytic/" title="Data Lake 기반 분석" class="dd-item 
+    <li data-nav-id="/ko/file/" title="파일 처리 시스템 구축" class="dd-item 
         
         
         
         ">
-      <a href="/ko/analytic/">
-          <b>5. </b>Data Lake 기반 분석
+      <a href="/ko/file/">
+          <b>4. </b>파일 처리 시스템 구축
           
       </a>
       
@@ -653,13 +385,13 @@
  
   
     
-    <li data-nav-id="/ko/analytic/athena/" title="Athena를 이용한 분석" class="dd-item 
+    <li data-nav-id="/ko/file/infra/" title="S3 &amp; CloudFront 생성" class="dd-item 
         
         
         
         ">
-      <a href="/ko/analytic/athena/">
-          <b>5-1. </b>Athena를 이용한 분석
+      <a href="/ko/file/infra/">
+          <b>4-1. </b>S3 &amp; CloudFront 생성
           
       </a>
       
@@ -682,13 +414,13 @@
  
   
     
-    <li data-nav-id="/ko/analytic/athena/bank-analyst/" title="Bank Analyst" class="dd-item 
+    <li data-nav-id="/ko/file/infra/s3/" title="S3 생성" class="dd-item 
         
         
         
         ">
-      <a href="/ko/analytic/athena/bank-analyst/">
-          Bank Analyst
+      <a href="/ko/file/infra/s3/">
+          <b>4-1-1. </b>S3 생성
           
       </a>
       
@@ -708,13 +440,42 @@
  
   
     
-    <li data-nav-id="/ko/analytic/athena/credit-card-analyst/" title="Credit Card Analyst" class="dd-item 
+    <li data-nav-id="/ko/file/infra/cf/" title="CloudFront 생성" class="dd-item 
         
         
         
         ">
-      <a href="/ko/analytic/athena/credit-card-analyst/">
-          Credit Card Analyst
+      <a href="/ko/file/infra/cf/">
+          <b>4-1-2 </b>CloudFront 생성
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ko/file/infra/cf/cf_file/" title="파일 다운로드용 CloudFront 생성" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ko/file/infra/cf/cf_file/">
+          <b>4-1-2-1 </b>파일 다운로드용 CloudFront 생성
           
       </a>
       
@@ -734,13 +495,167 @@
  
   
     
-    <li data-nav-id="/ko/analytic/athena/supervisor/" title="Supervisor" class="dd-item 
+    <li data-nav-id="/ko/file/infra/cf/cf_thumb/" title="이미지 썸네일용 CloudFront 생성" class="dd-item 
         
         
         
         ">
-      <a href="/ko/analytic/athena/supervisor/">
-          Supervisor
+      <a href="/ko/file/infra/cf/cf_thumb/">
+          <b>4-1-3 </b>이미지 썸네일용 CloudFront 생성
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ko/file/serverless/" title="서버리스 어플리케이션 구축" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ko/file/serverless/">
+          <b>4-2 </b>서버리스 어플리케이션 구축
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ko/file/serverless/sam/" title="SAM 프로젝트 생성" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ko/file/serverless/sam/">
+          <b>4-2-1 </b>SAM 프로젝트 생성
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ko/file/serverless/thumb/" title="실시간 이미지 썸네일 생성" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ko/file/serverless/thumb/">
+          <b>4-2-2 </b>실시간 이미지 썸네일 생성
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ko/file/serverless/thumb/cloud9/" title="Cloud9 설정" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ko/file/serverless/thumb/cloud9/">
+          <b>4-2-2-1 </b>Cloud9 설정
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ko/file/serverless/thumb/lambda/" title="람다 생성" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ko/file/serverless/thumb/lambda/">
+          <b>4-2-2-2 </b>람다 생성
           
       </a>
       
@@ -769,13 +684,48 @@
  
   
     
-    <li data-nav-id="/ko/analytic/redshift/" title="Redshift를 이용한 분석" class="dd-item 
+    <li data-nav-id="/ko/file/serverless/streaming/" title="동영상 스트리밍 람다 생성" class="dd-item 
         
         
         
         ">
-      <a href="/ko/analytic/redshift/">
-          <b>5-2. </b>Redshift를 이용한 분석
+      <a href="/ko/file/serverless/streaming/">
+          <b>4-2-3 </b>동영상 스트리밍 람다 생성
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/ko/file/api-test/" title="API 테스트" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ko/file/api-test/">
+          <b>4-3. </b>API 테스트
           
       </a>
       
@@ -798,13 +748,13 @@
  
   
     
-    <li data-nav-id="/ko/analytic/redshift/create-cluster-iam/" title="Redshift 클러스터 IAM 역할 설정" class="dd-item 
+    <li data-nav-id="/ko/file/api-test/image/" title="이미지 API 테스트" class="dd-item 
         
         
         
         ">
-      <a href="/ko/analytic/redshift/create-cluster-iam/">
-          Redshift 클러스터 IAM 역할 설정
+      <a href="/ko/file/api-test/image/">
+          <b>4-3-1. </b>이미지 API 테스트
           
       </a>
       
@@ -824,65 +774,13 @@
  
   
     
-    <li data-nav-id="/ko/analytic/redshift/create-cluster/" title="Redshift 클러스터 생성" class="dd-item 
+    <li data-nav-id="/ko/file/api-test/video/" title="동영상 API 테스트" class="dd-item 
         
         
         
         ">
-      <a href="/ko/analytic/redshift/create-cluster/">
-          Redshift 클러스터 생성
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/analytic/redshift/lake-formation-catalog/" title="Lake Formation 카탈로그 보안 설정" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/analytic/redshift/lake-formation-catalog/">
-          Lake Formation 카탈로그 보안 설정
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/ko/analytic/redshift/spectrum-query/" title="Redshift Spectrum 쿼리 실행" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ko/analytic/redshift/spectrum-query/">
-          Redshift Spectrum 쿼리 실행
+      <a href="/ko/file/api-test/video/">
+          <b>4-3-3. </b>동영상 API 테스트
           
       </a>
       
@@ -924,7 +822,7 @@
         
         ">
       <a href="/ko/cleanup/">
-          <b>6. </b>실습 리소스 정리
+          <b>5. </b>실습 리소스 정리
           
       </a>
       
@@ -956,7 +854,7 @@
               </li>
           
               <li> 
-                  <a class="padding" href="https://github.com/studydev/hugo-workshop"><i class='fab fa-github'></i> Github</a>
+                  <a class="padding" href="https://github.com/kanisuka"><i class='fab fa-github'></i> Github</a>
               </li>
           
         </ul>
@@ -985,18 +883,6 @@
                     
                   
               
-                  
-              
-          
-              
-              
-                  
-              
-                  
-                    
-                    
-                      <option id="en" value="/en/cleanup/">English</option>
-                    
                   
               
           
@@ -1056,7 +942,7 @@
             
           
           
-            <a href='/ko/'>워크샵 잘 만들어보기</a> > 실습 리소스 정리
+            <a href='/ko/'>파일 트래픽 최적화 아키텍처 구성</a> > 실습 리소스 정리
           
          
           
@@ -1096,26 +982,6 @@
 <div class="notices warning" ><p>이 실습을 마치면 사용한 AWS 계정에 비용이 추가로 발생하지 않도록 사용한 리소스를 삭제해야 합니다. 리소스를 삭제하기 위해 기존의 <strong>Administrator</strong> (관리자) 계정으로 AWS 관리 콘솔에 로그인 합니다.</p>
 </div>
 
-<ol>
-<li>
-<p>AWS CloudFormation을 사용하여 생성한 모든 AWS 리소스를 정리합니다. 사전에 CloudFormation에서 만든 리소스에서 변경 사항이 있는 것들을 삭제합니다.</p>
-<ul>
-<li>IAM에 생성된 <strong>lf-bank-analyst</strong> 유저에 추가한 두 개의 정책(AmazonRedsfhitReadOnlyAccess, AmazonRedshiftQueryEditor)을 우측 X 버튼을 클릭하여 모두 연결 해제 합니다.
-<img src="/images/resource_delete_01.png" alt="ResourceDelete01"></li>
-<li>S3 버킷안에 생성된 객체를 일괄 삭제합니다.
-<img src="/images/resource_delete_02.png" alt="ResourceDelete01"></li>
-</ul>
-</li>
-<li>
-<p>CloudFormation의 <strong>Lake-Formation-Workshop</strong> 스택을 선택하고 <strong>Delete</strong> 버튼을 클릭하여 Stack을 삭제합니다.
-<img src="/images/resource_delete_03.png" alt="ResourceDelete01">
-<img src="/images/resource_delete_04.png" alt="ResourceDelete02"></p>
-</li>
-<li>
-<p>Redshift 콘솔을 열고 생성한 Redshift 클러스터를 선택하고, Action에서 <strong>Delete</strong> 버튼을 클릭하여 삭제 합니다.
-<img src="/images/resource_delete_05.png" alt="ResourceDelete03"></p>
-</li>
-</ol>
 
 
 
@@ -1249,88 +1115,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
             
         
                     
@@ -1364,86 +1148,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1536,41 +1240,6 @@
 
                     
                     
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
                         
                     
                     
@@ -1607,6 +1276,127 @@
                     
             
         
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
                     
                         
             
@@ -1672,10 +1462,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/ko/analytic/redshift/spectrum-query/" title="Redshift Spectrum 쿼리 실행"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/ko/file/api-test/video/" title="동영상 API 테스트"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/ko/tip/" title="워크샵 만들기 Tip" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/ko/introduction/" title="시나리오 소개" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1685,36 +1475,23 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1584941427"></script>
-    <script src="/js/perfect-scrollbar.min.js?1584941427"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1584941427"></script>
-    <script src="/js/jquery.sticky.js?1584941427"></script>
-    <script src="/js/featherlight.min.js?1584941427"></script>
-    <script src="/js/highlight.pack.js?1584941427"></script>
+    <script src="/js/clipboard.min.js?1587027520"></script>
+    <script src="/js/perfect-scrollbar.min.js?1587027520"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1587027520"></script>
+    <script src="/js/jquery.sticky.js?1587027520"></script>
+    <script src="/js/featherlight.min.js?1587027520"></script>
+    <script src="/js/highlight.pack.js?1587027520"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1584941427"></script>
-    <script src="/js/learn.js?1584941427"></script>
-    <script src="/js/hugo-learn.js?1584941427"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1587027520"></script>
+    <script src="/js/learn.js?1587027520"></script>
+    <script src="/js/hugo-learn.js?1587027520"></script>
 
-    <link href="/mermaid/mermaid.css?1584941427" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1584941427"></script>
+    <link href="/mermaid/mermaid.css?1587027520" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1587027520"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
     
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-161422664-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
 
   </body>
 </html>

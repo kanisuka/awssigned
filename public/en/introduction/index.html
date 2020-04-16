@@ -3,29 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.67.1" />
+    <meta name="generator" content="Hugo 0.68.3" />
     <meta name="description" content="">
-<meta name="author" content="Hyounsoo Kim">
+<meta name="author" content="Hoyeon Park">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Introduction :: Hugo 템플릿 활용하기</title>
+    <title>Introduction :: Serverless 기반에서 Signed URL을 사용하여 파일 업로드 다운로드 하기</title>
 
     
-    <link href="/css/nucleus.css?1584941427" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1584941427" rel="stylesheet">
-    <link href="/css/hybrid.css?1584941427" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1584941427" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1584941427" rel="stylesheet">
-    <link href="/css/auto-complete.css?1584941427" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1584941427" rel="stylesheet">
-    <link href="/css/theme.css?1584941427" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1584941427" rel="stylesheet">
+    <link href="/css/nucleus.css?1586182091" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1586182091" rel="stylesheet">
+    <link href="/css/hybrid.css?1586182091" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1586182091" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1586182091" rel="stylesheet">
+    <link href="/css/auto-complete.css?1586182091" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1586182091" rel="stylesheet">
+    <link href="/css/theme.css?1586182091" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1586182091" rel="stylesheet">
     
-      <link href="/css/theme-aws.css?1584941427" rel="stylesheet">
+      <link href="/css/theme-aws.css?1586182091" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1584941427"></script>
+    <script src="/js/jquery-3.3.1.min.js?1586182091"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1584941427"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1584941427"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1586182091"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1586182091"></script>
 <script type="text/javascript">
     
         var baseurl = "\/en";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1584941427"></script>
+<script type="text/javascript" src="/js/search.js?1586182091"></script>
 
     
   </div>
@@ -69,198 +69,6 @@
     <ul class="topics">
 
         
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/en/tip/" title="AWS Data Lake Workshop" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/en/tip/">
-          AWS Data Lake Workshop
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-            
-          
-          
-          
-        
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/en/tip/aws/" title="AWS Data Lake Workshop" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/en/tip/aws/">
-          AWS Data Lake Workshop
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/en/tip/contributions/" title="AWS Data Lake Workshop" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/en/tip/contributions/">
-          AWS Data Lake Workshop
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/en/tip/hugo/" title="AWS Data Lake Workshop" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/en/tip/hugo/">
-          AWS Data Lake Workshop
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/en/tip/image/" title="AWS Data Lake Workshop" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/en/tip/image/">
-          AWS Data Lake Workshop
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/en/tip/vscode/" title="AWS Data Lake Workshop" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/en/tip/vscode/">
-          AWS Data Lake Workshop
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/en/tip/ga/" title="Google Analytics" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/en/tip/ga/">
-          Google Analytics
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
           
           
 
@@ -334,78 +142,6 @@
  
 
           
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/en/build-datalake/" title="Build up Data Lake" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/en/build-datalake/">
-          <b>4. </b>Build up Data Lake
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/en/analytic/" title="Analytics on Data Lake" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/en/analytic/">
-          <b>5. </b>Analytics on Data Lake
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-          
-          
-
-
-
-
- 
-  
-    
-    <li data-nav-id="/en/cleanup/" title="Clean Up" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/en/cleanup/">
-          <b>6. </b>Clean Up
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-          
          
     </ul>
 
@@ -428,7 +164,7 @@
               </li>
           
               <li> 
-                  <a class="padding" href="https://github.com/studydev/hugo-workshop"><i class='fab fa-github'></i> Github</a>
+                  <a class="padding" href="https://github.com/kanisuka"><i class='fab fa-github'></i> Github</a>
               </li>
           
         </ul>
@@ -615,123 +351,6 @@
             
                 
                     
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -751,54 +370,6 @@
                     
                         
                         
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -836,7 +407,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/en/tip/ga/" title="Google Analytics"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/en/" title="AWS Data Lake Workshop"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/en/setup/" title="Setup" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -849,36 +420,23 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1584941427"></script>
-    <script src="/js/perfect-scrollbar.min.js?1584941427"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1584941427"></script>
-    <script src="/js/jquery.sticky.js?1584941427"></script>
-    <script src="/js/featherlight.min.js?1584941427"></script>
-    <script src="/js/highlight.pack.js?1584941427"></script>
+    <script src="/js/clipboard.min.js?1586182091"></script>
+    <script src="/js/perfect-scrollbar.min.js?1586182091"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1586182091"></script>
+    <script src="/js/jquery.sticky.js?1586182091"></script>
+    <script src="/js/featherlight.min.js?1586182091"></script>
+    <script src="/js/highlight.pack.js?1586182091"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1584941427"></script>
-    <script src="/js/learn.js?1584941427"></script>
-    <script src="/js/hugo-learn.js?1584941427"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1586182091"></script>
+    <script src="/js/learn.js?1586182091"></script>
+    <script src="/js/hugo-learn.js?1586182091"></script>
 
-    <link href="/mermaid/mermaid.css?1584941427" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1584941427"></script>
+    <link href="/mermaid/mermaid.css?1586182091" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1586182091"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
     
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-161422664-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
 
   </body>
 </html>
